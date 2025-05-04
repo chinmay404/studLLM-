@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Interface</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar (hidden by default on mobile) -->
+        <aside class="sidebar">
+            <div class="sidebar__header">
+                <div class="user-profile-header">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="user-info">
+                        <span id="userName">Guest User</span>
+                        <span id="userEmail" class="user-email">guest@example.com</span>
+                    </div>
+                </div>
+                <button class="new-chat-btn">
+                    <i class="fas fa-plus"></i>
+                    New chat
+                </button>
+            </div>
+
+            <div class="sidebar__conversations">
+                <div class="conversation-item conversation-item--active">
+                    <i class="far fa-comment-dots"></i>
+                    <span>General conversation</span>
+                </div>
+                <div class="conversation-item">
+                    <i class="far fa-comment-dots"></i>
+                    <span>Job search assistant</span>
+                </div>
+                <div class="conversation-item">
+                    <i class="far fa-comment-dots"></i>
+                    <span>Location finder</span>
+                </div>
+            </div>
+
+            <div class="sidebar__footer">
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark mode</span>
+                </div>
+                <div class="profile-section">
+                    <h4>My Profile</h4>
+                    <ul class="profile-menu">
+                        <li><i class="fas fa-user-circle"></i> View Profile</li>
+                        <li><i class="fas fa-history"></i> Chat History</li>
+                        <li><i class="fas fa-cog"></i> Settings</li>
+                        <li><i class="fas fa-sign-out-alt"></i> Logout</li>
+                    </ul>
+                </div>
+                <div class="app-version">studLLM v1.0.0</div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="chat-header">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1>AI Assistant</h1>
+            </div>
+
+            <div class="conversation" id="conversation">
+                <!-- Welcome message will be added by JavaScript -->
+            </div>
+
+            <div class="input-area">
+                <div class="input-container">
+                    <textarea id="userInput" placeholder="Message AI assistant..." rows="1"></textarea>
+                    <button id="sendButton" class="send-button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <p class="disclaimer">AI assistant may produce inaccurate information about people, places, or facts.
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Templates for different content types -->
+    <template id="userTurnTemplate">
+        <div class="conversation-turn user-turn">
+            <div class="turn-content turn-content--user">
+                <div class="message-content"></div>
+            </div>
+            <div class="turn-avatar turn-avatar--user">
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </template>
+
+    <template id="aiTurnTemplate">
+        <div class="conversation-turn ai-turn">
+            <div class="turn-avatar turn-avatar--ai">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="turn-content turn-content--ai">
+                <div class="think-dropdown">
+                    <div class="think-dropdown__header">
+                        <i class="fas fa-brain"></i>
+                        <span>Thinking...</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="think-dropdown__content"></div>
+                </div>
+                <div class="message-content"></div>
+                <div class="citations"></div>
+                <div class="answered-by">
+                    Answered by <span class="ai-name">AI Assistant</span>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="typingTemplate">
+        <div class="conversation-turn ai-turn">
+            <div class="turn-avatar turn-avatar--ai">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="turn-content turn-content--ai">
+                <div class="typing-indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="jobListingTemplate">
+        <div class="job-listing">
+            <h3 class="job-listing__title"></h3>
+            <p class="job-listing__company"></p>
+            <p class="job-listing__location"></p>
+            <p class="job-listing__salary"></p>
+            <a href="#" class="job-listing__link">View Details</a>
+        </div>
+    </template>
+
+    <template id="mapTemplate">
+        <div class="map-container">
+            <h3 class="map-container__title"></h3>
+            <div class="map-container__map">
+                <!-- SVG Map will be inserted here -->
+            </div>
+        </div>
+    </template>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+
+</html>

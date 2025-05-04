@@ -1,0 +1,162 @@
+{
+    "_id": "Germany",
+    "Country": "Germany",
+    "states": {
+      "Arrival at Airport": {
+        "Action": "Land at a German airport (e.g., Frankfurt, Berlin, Munich)",
+        "Steps": [
+          "Follow signs for immigration control immediately upon disembarking",
+          "Prepare and present your passport, student visa (National D-Visa), and university admission letter",
+          "Keep proof of accommodation and blocked account confirmation easily accessible",
+          "Be prepared for possible random checks and security screening"
+        ],
+        "Tips": [
+          "Keep all critical documents in your hand luggage and make copies (both digital and paper)",
+          "Dress comfortably as you may need to stand or wait in queues",
+          "Confirm your arrival details (like terminal and gate) before landing"
+        ]
+      },
+      "Baggage Claim & Customs": {
+        "Action": "Collect your checked baggage and proceed to customs",
+        "Steps": [
+          "Locate your designated carousel via the information screens",
+          "Inspect your baggage for any damage or missing items",
+          "Choose the green channel if you have nothing to declare; if carrying high-value items or cash >10,000 EUR, use the red channel",
+          "Complete a customs declaration if required (ask for assistance if you are unsure)"
+        ],
+        "Tips": [
+          "Keep any receipts for expensive items with you in case you need to justify them later",
+          "Familiarize yourself with local customs regulations ahead of time"
+        ]
+      },
+      "Transit to Accommodation": {
+        "Action": "Move from the airport to your temporary or permanent accommodation",
+        "Options": [
+          "Taxi â€“ ensure the taxi is registered, and agree on fare or use meter",
+          "Public transport â€“ check schedules and ticket machines; consider buying a day pass if available",
+          "University pickup or friendâ€™s ride â€“ coordinate your arrival details in advance"
+        ],
+        "Tips": [
+          "Purchase a SIM card at the airport or connect to free WiFi to access maps and translation apps",
+          "Have the address of your accommodation written down in both English and German"
+        ]
+      },
+      "Temporary Accommodation / Permanent Stay": {
+        "Scenario": {
+          "Temporary": [
+            "Hostel or guesthouse offered by your university",
+            "Airbnb or short-term rental with written confirmation",
+            "Staying with a friend (ensure you obtain a temporary address confirmation if needed)"
+          ],
+          "Permanent": [
+            "Rented apartment",
+            "Student dormitory (often requires separate application procedures)"
+          ]
+        },
+        "Requirement": "Secure a rental agreement or written confirmation as youâ€™ll need proof of address (for Anmeldung and bank account setup)",
+        "Tips": [
+          "Inspect your accommodation upon arrival and note any pre-existing damages (take photos)",
+          "Confirm utility details and emergency contacts with the landlord or accommodation office"
+        ]
+      },
+      "Anmeldung (City Registration)": {
+        "Action": "Register your residence at the local BÃ¼rgeramt (Citizen Office)",
+        "Deadline": "Within 14 days of moving in",
+        "Documents Needed": [
+          "Valid passport",
+          "Rental contract (and/or confirmation of temporary accommodation)",
+          "WohnungsgeberbestÃ¤tigung (landlordâ€™s confirmation letter stating your move-in date)"
+        ],
+        "Output": "AnmeldebestÃ¤tigung (registration certificate) â€“ essential for further administrative processes",
+        "Tips": [
+          "Book an appointment online in advance as many BÃ¼rgerÃ¤mter have long waiting times",
+          "Bring both originals and photocopies of all documents",
+          "Be punctual and prepare for a short wait"
+        ]
+      },
+      "Open a German Bank Account": {
+        "Action": "Set up a local bank account to handle finances such as rent and tuition fees",
+        "Options": [
+          "Traditional banks like Deutsche Bank, Commerzbank, or Sparkasse",
+          "Digital banks such as N26, which may have a simpler application process for students"
+        ],
+        "Documents Needed": [
+          "AnmeldebestÃ¤tigung (registration certificate)",
+          "Passport (and visa if applicable)",
+          "University admission letter â€“ sometimes required to prove your student status"
+        ],
+        "Tips": [
+          "Research bank fees and benefits (some offer free student accounts)",
+          "Consider a bank that provides an English interface if youâ€™re not fluent in German"
+        ]
+      },
+      "Health Insurance Registration": {
+        "Action": "Obtain mandatory health insurance coverage required for your studies",
+        "Types": {
+          "Public Insurance": "Examples include TK, AOK, DAK â€“ usually preferred for students under 30",
+          "Private Insurance": "For students over 30 or certain special cases; ensure it meets university and visa requirements"
+        },
+        "Documents Needed": [
+          "Passport",
+          "University enrollment or admission proof",
+          "Visa",
+          "AnmeldebestÃ¤tigung (if available)"
+        ],
+        "Output": "Health Insurance Certificate â€“ needed for both university enrollment and residence permit application",
+        "Tips": [
+          "Compare insurance plans in terms of monthly premiums and coverage benefits",
+          "Ask your universityâ€™s international office for recommendations on insurers popular with students"
+        ]
+      },
+      "University Enrollment (Immatrikulation)": {
+        "Action": "Complete your enrollment at the Student Office (Studierendensekretariat)",
+        "Deadline": "Typically within the first few weeks of the semester",
+        "Documents Needed": [
+          "Valid passport and visa",
+          "University admission letter",
+          "Health Insurance Certificate",
+          "Proof of payment for the semester fee (bank receipt or payment confirmation)",
+          "AnmeldebestÃ¤tigung (city registration certificate)"
+        ],
+        "Output": "Student ID, semester ticket, and an official enrollment certificate",
+        "Tips": [
+          "Confirm deadlines and required documents on your universityâ€™s website ahead of time",
+          "Keep all receipts and confirmations organized for future reference",
+          "If any document is missing or delayed, immediately contact the relevant office for guidance"
+        ]
+      },
+      "Apply for Residence Permit (Aufenthaltstitel)": {
+        "Action": "Apply for or convert your visa to a residence permit at the local AuslÃ¤nderbehÃ¶rde (Foreigners' Office)",
+        "Timing": "Before your student visa expires (usually within the first 90 days)",
+        "Documents Required": [
+          "Passport with valid visa",
+          "Biometric photos (as per specifications)",
+          "Proof of enrollment from your university",
+          "Health insurance certificate",
+          "Proof of financial means (e.g., blocked account statement)",
+          "AnmeldebestÃ¤tigung (city registration certificate)"
+        ],
+        "Output": "Residence Permit Card (typically valid for 1-2 years, renewable as needed)",
+        "Tips": [
+          "Book your appointment with the AuslÃ¤nderbehÃ¶rde as early as possible; appointments can be scarce",
+          "Double-check document requirements on your cityâ€™s official website as they may vary slightly",
+          "Prepare a translated copy of key documents if necessary (official translations might be required)"
+        ]
+      },
+      "Other Settling Tasks": {
+        "Tasks": [
+          "Purchase a SIM card or mobile plan â€“ many providers offer plans specifically for students",
+          "Set up a monthly transport pass (often available at discounted rates with your student ID)",
+          "Register for any part-time work opportunities if permitted by your visa (notify AuslÃ¤nderbehÃ¶rde if working more than allowed hours)",
+          "Explore local language courses â€“ many universities offer integration or language classes for beginners",
+          "Join student groups or international clubs for networking and social support",
+          "Familiarize yourself with local emergency numbers (112 for emergencies, 110 for police)"
+        ],
+        "Tips": [
+          "Keep a binder (digital or paper) with copies of all important documents and contacts",
+          "Download local apps for transportation, banking, and local news to stay informed",
+          "Consider a short introductory tour of your city to learn key locations (e.g., grocery stores, hospitals, and banks)"
+        ]
+      }
+    }
+  }
